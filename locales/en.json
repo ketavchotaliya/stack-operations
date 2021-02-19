@@ -1,0 +1,10 @@
+{
+  "SERVER_ERROR": "Server Error",
+  "VALIDATIONS": {
+    "COMMON": {
+      "authorization": {
+        "required": "Authorization Token is required"
+      }
+    }
+  }
+}
