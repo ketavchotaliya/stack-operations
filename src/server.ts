@@ -16,5 +16,5 @@ const server = createServer(app);
 const port: number = Number(process.env.PORT || 8080);
 
 server.listen(port, () => {
-  logger.info(__filename, '', '', `Server is running on ${port}`, ``);
+  logger.info(__filename, '', `Server is running on ${port}`, ``);
 });

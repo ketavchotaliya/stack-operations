@@ -15,34 +15,34 @@ class Logging {
     });
   }
   // public methods for external use
-  public error(fileName: string, method: string, uuid: string, msg: string, data: any) {
+  public error(fileName: string, method: string, msg: string, data: any) {
     this.setLabel(fileName, method);
-    this.logger.error(`${uuid} - ${msg}`, data ? data : '', '');
+    this.logger.error(`${msg}`, data ? data : '', '');
   }
 
-  public warn(fileName: string, method: string, uuid: string, msg: string, data: any) {
+  public warn(fileName: string, method: string, msg: string, data: any) {
     this.setLabel(fileName, method);
-    this.logger.warn(`${uuid} - ${msg}`, data ? data : '', '');
+    this.logger.warn(`${msg}`, data ? data : '', '');
   }
 
-  public info(fileName: string, method: string, uuid: string, msg: string, data: any) {
+  public info(fileName: string, method: string, msg: string, data: any) {
     this.setLabel(fileName, method);
-    this.logger.info(`${uuid} - ${msg}`, data ? data : '', '');
+    this.logger.info(`${msg}`, data ? data : '', '');
   }
 
-  public verbose(fileName: string, method: string, uuid: string, msg: string, data: any) {
+  public verbose(fileName: string, method: string, msg: string, data: any) {
     this.setLabel(fileName, method);
-    this.logger.verbose(`${uuid} - ${msg}`, data ? data : '', '');
+    this.logger.verbose(`${msg}`, data ? data : '', '');
   }
 
-  public debug(fileName: string, method: string, uuid: string, msg: string, data: any) {
+  public debug(fileName: string, method: string, msg: string, data: any) {
     this.setLabel(fileName, method);
-    this.logger.debug(`${uuid} - ${msg}`, data ? data : '', '');
+    this.logger.debug(`${msg}`, data ? data : '', '');
   }
 
-  public silly(fileName: string, method: string, uuid: string, msg: string, data: any) {
+  public silly(fileName: string, method: string, msg: string, data: any) {
     this.setLabel(fileName, method);
-    this.logger.silly(`${uuid} - ${msg}`, data ? data : '', '');
+    this.logger.silly(`${msg}`, data ? data : '', '');
   }
 
   public setFileLevel(level: string) {

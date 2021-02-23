@@ -6,7 +6,5 @@
 			"invalid": "Input should contain 0-9 Digits, White Space and Operators (DUP, POP, +, -) only"
 		}
 	},
-	"LOCATION": {
-		"COUNTRY_LIST": "LOCATION.COUNTRY_LIST"
-	}
+	"output": "output"
 }
