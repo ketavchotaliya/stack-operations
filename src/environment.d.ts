@@ -5,7 +5,6 @@ declare namespace Environment {
    * Custom request that includes all the types of express Request Object
    */
   interface CustomRequest extends Request {
-    files?: any;
     custom?: any;
   }
 

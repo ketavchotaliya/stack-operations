@@ -1,11 +1,11 @@
 import { Application } from 'express';
 
-import ProviderRoutes from './provider.route';
+import StackOperationRoutes from '../components/stack-operations/stackOperations.route';
 
 /**
  * Init All routes here
  */
 export default (app: Application) => {
   // Provider Routes
-  app.use('/provider', ProviderRoutes);
+  app.use('/stack-operations', StackOperationRoutes);
 };

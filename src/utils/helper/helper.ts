@@ -31,7 +31,6 @@ export const createResponse = (
  * @param {Object} res
  * @param {errors} errors - Errors Object
  *
- * @return {*|Sequelize.json|Promise<any>}
  */
 export const createValidationResponse = (res: Response, errors: any) => {
   return createResponse(
