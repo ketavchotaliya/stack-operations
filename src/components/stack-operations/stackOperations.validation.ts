@@ -18,7 +18,6 @@ class StackOperationsValidations {
       errors.input = res.__('VALIDATIONS.input.required');
     } else if (!matches(input.toUpperCase(), INPUT_REGEX)) {
       errors.input = res.__('VALIDATIONS.input.invalid');
-      errors.input = res.__('VALIDATIONS.input.invalid');
     }
 
     if (Object.keys(errors).length > 0) {
