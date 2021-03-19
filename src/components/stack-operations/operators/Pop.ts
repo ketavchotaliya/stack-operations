@@ -18,7 +18,7 @@ class Pop {
    * Remove top element of stack.
    * @return true in Boolean value.
    */
-  public removeElement() {
+  public stackOperation() {
     Stack.pop();
     return true;
   }

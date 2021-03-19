@@ -41,6 +41,14 @@ class Stack {
   public clearStack() {
     return (this.stack = []);
   }
+
+  /**
+   * Returns a last element of stack.
+   * @returns numeric value
+   */
+  public getLastElement() {
+    return this.stack[this.stack.length - 1];
+  }
 }
 
 export default new Stack([]);

@@ -18,7 +18,7 @@ class Duplicate {
    * Get top element of stack and Push it again.
    * @return true in Boolean value.
    */
-  public duplicateElement() {
+  public stackOperation() {
     const stack = Stack.getStack();
 
     const lastElement = stack[stack.length - 1];

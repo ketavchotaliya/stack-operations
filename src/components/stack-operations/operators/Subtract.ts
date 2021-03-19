@@ -30,7 +30,7 @@ class Subtract {
    * Remove first two elements from stack, Subtract first element from second element and Push it to stack
    * @return true in Boolean value.
    */
-  public addElement() {
+  public stackOperation() {
     // remove first element from stack
     const firstElement: any = Stack.pop();
 

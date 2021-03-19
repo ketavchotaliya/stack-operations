@@ -19,7 +19,7 @@ class Add {
    * Remove first two elements from stack, Add then and Push it to stack
    * @return true in Boolean value.
    */
-  public addElement() {
+  public stackOperation() {
     // remove first element from stack
     const firstElement: any = Stack.pop();
 
