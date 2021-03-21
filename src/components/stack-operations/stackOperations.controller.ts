@@ -11,7 +11,7 @@ class StackOperations {
    * @param req
    * @param res
    */
-  async performStackOperation(req: CustomRequest, res: CustomResponse) {
+  public performStackOperation(req: CustomRequest, res: CustomResponse) {
     try {
       const { input } = req.body;
       const inputArray: string[] = input.split(' ').filter((element: string) => element);

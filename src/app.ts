@@ -1,10 +1,11 @@
 import express, { Request, Response } from 'express';
 import middleware from './middleware';
 import routes from './routes';
+import STATUS_CODES from 'http-status-codes';
 
 const app: express.Application = express();
 
-// User Middleware
+// Use Middleware
 middleware(app);
 // Use routes
 routes(app);
@@ -21,7 +22,9 @@ app.get('/health', (req: Request, res: Response) => {
 
 // Invalid Route
 app.all('/*', (req: Request, res: Response) => {
-  return res.status(400).json({ status: 400, message: 'Bad Request' });
+  return res
+    .status(STATUS_CODES.NOT_FOUND)
+    .json({ status: STATUS_CODES.NOT_FOUND, message: STATUS_CODES.getStatusText(STATUS_CODES.NOT_FOUND) });
 });
 
 export default app;

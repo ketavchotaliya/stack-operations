@@ -5,7 +5,7 @@ import { isEmpty, matches } from '../../utils/validator';
 
 class StackOperationsValidations {
   /**
-   * @description List Location validations
+   * @description Input validations
    * @param req
    * @param res
    * @param next

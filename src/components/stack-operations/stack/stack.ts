@@ -47,7 +47,11 @@ class Stack {
    * @returns numeric value
    */
   public getLastElement() {
-    return this.stack[this.stack.length - 1];
+    if (this.stack.length) {
+      return this.stack[this.stack.length - 1];
+    } else {
+      return this.stack;
+    }
   }
 }
 

@@ -8,7 +8,8 @@
     "dev:node": "nodemon build/server.js",
     "dev": "concurrently npm:dev:*",
     "start": "tsc && node build/server.js",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -23,15 +24,15 @@
   "homepage": "https://github.com/ketavchotaliya/stack-operations#readme",
   "devDependencies": {
     "@types/chai": "^4.2.15",
-    "@types/istanbul": "^0.4.30",
     "@types/mocha": "^8.2.1",
     "chai": "^4.3.0",
     "chai-http": "^4.3.0",
     "concurrently": "^4.1.0",
-    "istanbul": "^0.4.5",
     "mocha": "^8.3.0",
+    "mochawesome": "^6.2.2",
     "nodemon": "^1.19.1",
     "prettier": "^1.18.2",
+    "ts-node": "^9.1.1",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
