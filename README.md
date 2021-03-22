@@ -73,7 +73,7 @@ Output : -1
     
 # Usage:
 
-    To get the chess pieces movement follow the below steps.
+    To get the last element of stack follow the below steps.
 
     i. Install the dependencies using npm install command
 

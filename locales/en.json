@@ -1,0 +1,10 @@
+{
+	"SERVER_ERROR": "Server Error",
+	"VALIDATIONS": {
+		"input": {
+			"required": "Input key is required",
+			"invalid": "Input should contain 0-9 Digits, White Space and Operators (DUP, POP, +, -) only"
+		}
+	},
+	"output": "output"
+}
